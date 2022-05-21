@@ -15,5 +15,6 @@ p {
 #game {
 	margin: auto;
 	position: relative;
-
+	height: 300px;
+	
 }
