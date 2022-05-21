@@ -53,3 +53,7 @@ div.boundary.example {
 	width: 100px;
 	height: 25px;
 }
+
+div.youlose {
+	background-color: #ff8888;
+}
