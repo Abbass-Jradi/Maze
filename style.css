@@ -22,5 +22,7 @@ p {
 #start, #end {
 	position: absolute;
 	top: 205px;
-
+	height: 30px;
+	width: 30px;
+	
 }
