@@ -50,5 +50,6 @@ div.boundary {
 
 div.boundary.example {
 	margin: auto;
-
+	width: 100px;
+	height: 25px;
 }
