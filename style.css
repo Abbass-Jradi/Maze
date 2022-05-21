@@ -24,5 +24,6 @@ p {
 	top: 205px;
 	height: 30px;
 	width: 30px;
-	
+	border: 1px solid black;
+
 }
