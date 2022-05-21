@@ -47,3 +47,8 @@ div.boundary {
 	background-color: #eeeeee;
 	border: 1px solid black;
 }
+
+div.boundary.example {
+	margin: auto;
+
+}
