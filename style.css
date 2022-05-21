@@ -32,3 +32,8 @@ p {
 	font-size: 25pt;
 	text-align: center;
 }
+
+#game #start {
+	background-color: #88ff88;
+	
+}
