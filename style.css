@@ -18,3 +18,8 @@ p {
 	height: 300px;
 	width: 500px;
 }
+
+#start, #end {
+	position: absolute;
+
+}
