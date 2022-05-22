@@ -15,5 +15,9 @@ var element = document.getElementById('end').addEventListener("mouseover", youWo
 
 /* This will return the walls into their initial color by passing through the start S. */
 var element = document.getElementById('start').addEventListener("mouseover", playAgain);
+
+/* This will reset the game after clicking on the start S. */
+var element = document.getElementById('start').addEventListener("click", clear);
+
 }
 
