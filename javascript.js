@@ -29,5 +29,27 @@ function youLose() {
     document.getElementById('status').innerHTML = "You Lost! and Your Score is: " + score;        
 }
 
+function playAgain() {
+    var elements = document.getElementsByClassName('boundary');
+
+    for (var i = 0; i < elements.length; i++){
+    elements[i].style.backgroundColor= "#eeeeee";   
+    }
+}
+
+function  clear () {
+    var elements = document.getElementsByClassName('boundary');
+    for (var i = 0; i < elements.length; i++){
+    elements[i].style.backgroundColor= "#eeeeee";   
+    }
+    score = 0;
+    document.getElementById('status').innerHTML = "Begin by moving your mouse over the S and Your score is: " + score;
+}
+	
+function youWon() {   
+    score = score + 5;
+    document.getElementById('status').innerHTML = "You Won! and Your Score is: " + score;   
+}
+
 }
 
