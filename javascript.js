@@ -11,4 +11,9 @@ for (var i = 0; i < elements.length; i++) {
 }
 
 /* This will detect the presence of cursor on the end E. */
-var element = document.getElementById('end').addEventListener("mouseover", youWon);}
+var element = document.getElementById('end').addEventListener("mouseover", youWon);
+
+/* This will return the walls into their initial color by passing through the start S. */
+var element = document.getElementById('start').addEventListener("mouseover", playAgain);
+}
+
