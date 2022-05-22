@@ -19,5 +19,15 @@ var element = document.getElementById('start').addEventListener("mouseover", pla
 /* This will reset the game after clicking on the start S. */
 var element = document.getElementById('start').addEventListener("click", clear);
 
+/* getElmenetsByClassName will return an array, so to iterate over them, a for loop is used */
+function youLose() {
+    var elements = document.getElementsByClassName('boundary');
+    for (var i = 0; i < elements.length; i++){
+        elements[i].style.backgroundColor= "red";   
+    }
+    score = score - 10;
+    document.getElementById('status').innerHTML = "You Lost! and Your Score is: " + score;        
+}
+
 }
 
