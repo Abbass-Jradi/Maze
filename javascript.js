@@ -10,4 +10,5 @@ for (var i = 0; i < elements.length; i++) {
     elements[i].addEventListener("mouseover", youLose);
 }
 
-}
+/* This will detect the presence of cursor on the end E. */
+var element = document.getElementById('end').addEventListener("mouseover", youWon);}
