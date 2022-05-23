@@ -2,7 +2,9 @@
 window.onload = function () {
 
 var score = 0; 
-
+var cancel = 0;
+var new_record = 0;
+var last_record = 0;
 /* Elements are looked up by class name: boundary to identify the walls when touching them */
 /* When touching the walls which is identified by the event listener "mouseover", the function youLose gets called. */
 var elements = document.getElementsByClassName('boundary');
@@ -50,6 +52,33 @@ function youWon() {
     score = score + 5;
     document.getElementById('status').innerHTML = "You Won! and Your Score is: " + score;   
 }
+
+
+/* Timer Code */
+
+var seconds = 0;
+var el = document.getElementById('time');
+
+function incrementSeconds() {
+    seconds += 1;
+    if (seconds > new_record){new_record = seconds;}
+   document.getElementById('live').innerHTML = "Live: "+seconds+"s" ;
+   last_record = seconds;
+   
+}
+
+document.getElementById('start').addEventListener("mouseover", function(){
+   cancel = setInterval(incrementSeconds, 500);
+   seconds = 0;
+   
+});
+
+document.getElementById('end').addEventListener("mouseover", function(){
+     clearInterval(cancel);
+     document.getElementById('last').innerHTML = "Last: "+last_record+"s" ;
+     document.getElementById('best').innerHTML = "Best: "+new_record+"s" ;
+
+});
 
 }
 
