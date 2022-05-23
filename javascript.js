@@ -61,7 +61,7 @@ var el = document.getElementById('time');
 
 function incrementSeconds() {
     seconds += 1;
-    if (seconds > new_record){new_record = seconds;}
+    if (seconds < new_record){new_record = seconds;}
    document.getElementById('live').innerHTML = "Live: "+seconds+"s" ;
    last_record = seconds;
    
