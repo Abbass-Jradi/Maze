@@ -77,6 +77,7 @@ document.getElementById('end').addEventListener("mouseover", function(){
      clearInterval(cancel);
      document.getElementById('last').innerHTML = "Last: "+last_record+"s" ;
      document.getElementById('best').innerHTML = "Best: "+new_record+"s" ;
+     document.getElementById('live').innerHTML = "Live: "+"0"+"s" ;
 
 });
 
